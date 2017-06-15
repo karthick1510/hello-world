@@ -1,0 +1,16 @@
+- hosts: all
+  gather_facts: yes
+  
+  tasks:
+    
+    - name: Creating test_kartick directory
+      #shell: cp -pf /scm_plus1/{{ENV}}/config/etc/vgapp.properties /scm_plus1/{{ENV}}/config/etc/vgapp.properties_1
+      shell: echo "Karthick"
+      
+    - name: Calling perl to upload to one artifactory
+      shell: echo "Karthick"
+      #shell: cd /scm_plus1/config/ear ; /usr/bin/perl /opt/app/scripts/AWS_CMPNONPROD_upload_to_artifactory.pl -M -f {{artifact_name}} | tee {{artifact_name}}upload.txt
+      
+    - name: Wait time
+      shell: sleep 100     
+      
